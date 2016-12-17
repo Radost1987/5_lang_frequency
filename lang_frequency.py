@@ -6,22 +6,21 @@ def load_data(filepath):
     if not os.path.exists(filepath):
         return None
     with open (filepath) as file:
-        input_data=file.readlines()
+        input_data=file.read()
         return input_data
     
 def get_list_of_words(data):
     if not data:
         print('Пустой текст')   
-    all_words=[]
-    for words in data:
-        all_words+=re.findall(r'\w+',words.lower())
+    all_words=re.findall(r'\w+',data.lower())    
     return all_words
         
-def get_most_frequent_words(data):   
+def get_most_frequent_words(data): 
+    NUMBER_FREQUENT_WORDS=10
     number_of_words=Counter(data)
-    most_frequent_words=number_of_words.most_common(10)
-    for word in range(len(most_frequent_words)):
-        print(most_frequent_words[word][0],most_frequent_words[word][1])
+    most_frequent_words=number_of_words.most_common(NUMBER_FREQUENT_WORDS)  
+    for word in most_frequent_words:
+        print(word[0],word[1])
         
 if __name__ == '__main__':
     filepath=input('Введите абсолютный путь до файла ')
@@ -31,3 +30,4 @@ if __name__ == '__main__':
         get_most_frequent_words(wordlist)
     else:
         print('Неверный путь до файла')
+        
