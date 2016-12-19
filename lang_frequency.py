@@ -16,9 +16,9 @@ def get_list_of_words(data):
     return all_words
         
 def get_most_frequent_words(data): 
-    NUMBER_FREQUENT_WORDS=10
+    number_frequent_words=10
     number_of_words=Counter(data)
-    most_frequent_words=number_of_words.most_common(NUMBER_FREQUENT_WORDS)  
+    most_frequent_words=number_of_words.most_common(number_frequent_words)  
     for word in most_frequent_words:
         print(word[0],word[1])
         
