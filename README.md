@@ -7,7 +7,7 @@ Python 3.5
 * Run the script in a terminal
 * Enter the absolute path of your TXT file
 ## Example
-Run in a terminal
+> Run in a terminal
 python lang_frequency.py
 Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt
 10 самых часто встречаемых слов в данном тексте
