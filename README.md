@@ -5,7 +5,7 @@ This code displays 10 the most common words from TXT file.
 Python 3.5
 ### Getting started
 * Run the script in a terminal
-              python lang_frequency.py
+              ```python lang_frequency.py
 * Enter the absolute path of your TXT file
 
 ### Example
@@ -14,7 +14,7 @@ For example
 * Run the script in a terminal
 
        
-        ```Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt
+        Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt
         10 самых часто встречаемых слов в данном тексте
         и 4779
         в 3658
