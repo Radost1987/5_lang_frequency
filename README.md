@@ -6,14 +6,12 @@ Python 3.5
 ### Getting started
 * Run the script in a terminal
 
-              ```python lang_frequency.py
-
+         python lang_frequency.py
 
 * Enter the absolute path of your TXT file
 
 ### Example
 For example 10 the most common words from Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt in repository.
-
        
         Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt
         10 самых часто встречаемых слов в данном тексте
