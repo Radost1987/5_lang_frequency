@@ -13,8 +13,7 @@ Python 3.5
 ### Example
 For example 10 the most common words from Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt in repository.
 ```python
-        Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt
-        10 самых часто встречаемых слов в данном тексте
+Введите абсолютный путь до файла ../Nikolay_Speranskiy__Volhvy_protiv_globalizma.txt 10 самых часто встречаемых слов в данном тексте
         и 4779
         в 3658
         не 2299
