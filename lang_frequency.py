@@ -9,9 +9,9 @@ def load_data(filepath):
         input_data=file.read()
         return input_data
     
-def get_list_of_words(data):
+def get_list_of_words(data): 
     if not data:
-        print('Пустой текст')   
+        return None
     all_words=re.findall(r'\w+',data.lower())    
     return all_words
         
@@ -21,19 +21,23 @@ def get_number_words_repetitions(data):
  
 
 def get_most_frequent_words(data):
-    print('10 самых часто встречаемых слов в данном тексте')
     number_frequent_words=10
     most_frequent_words=data.most_common(number_frequent_words)  
-    for word, number in most_frequent_words:
-        print(word,number)
+    return most_frequent_words
         
 if __name__ == '__main__':
     filepath=input('Введите абсолютный путь до файла ')
     full_text=load_data(filepath)
     if full_text is not None:
         wordlist=get_list_of_words(full_text)
-        number_words_repetitions=get_number_words_repetitions(wordlist)
-        get_most_frequent_words(number_words_repetitions)
+        if wordlist is not None:
+            print('10 самых часто встречаемых слов в данном тексте')    
+            number_words_repetitions=get_number_words_repetitions(wordlist)
+            ten_frequent_words=get_most_frequent_words(number_words_repetitions)
+            for word, number in ten_frequent_words:
+                print(word, number)
+        else:
+            print('Пустой текст')
     else:
         print('Неверный путь до файла')
-        
+
